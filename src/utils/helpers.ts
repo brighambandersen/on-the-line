@@ -1,9 +1,9 @@
 import { Player } from "./constants";
-import uuid from "react-uuid";
+import { nanoid } from "nanoid";
 
 export function createPlayer(name: string, lives: number): Player {
   return {
-    id: uuid(),
+    id: nanoid(),
     name,
     lives
   };

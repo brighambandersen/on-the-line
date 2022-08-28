@@ -13,7 +13,7 @@ const styles = {
 
 interface Props {
   players: Player[];
-  takeLives(victimId: number, numLives: number): void;
+  takeLives(victimId: string, numLives: number): void;
   restartGame(): void;
 }
 

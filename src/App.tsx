@@ -13,7 +13,7 @@ function App() {
     setPlayers([...players, newPlayer]);
   }
 
-  function takeLives(victimId: number, numLives: number) {
+  function takeLives(victimId: string, numLives: number) {
     const playerIdx = players.findIndex((player) => player.id === victimId);
     const victim = players[playerIdx];
     victim.lives -= numLives;
